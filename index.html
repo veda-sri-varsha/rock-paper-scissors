@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <div class="icon icon--moon">
+            <img src="public/images/moon.png" alt="Moon Icon" width="32" height="32">
+        </div>
+
+        <div class="icon icon--sun">
+            <img src="public/images/sun.png" alt="Sun Icon" width="32" height="32">
+        </div>
+    </button>
+
+    <div class="container">
+        <div class="home-screen">
+            <h1 class="title">Rock Paper Scissors with Compose</h1>
+            <button class="play-btn" onclick="startGame()">PLAY</button>
+        </div>
+
+        <div class="game-container">
+            <h1 class="title">Rock Paper Scissors with Compose</h1>
+            <div class="reset" onclick="resetTour()">RESET THE TOUR</div>
+
+            <div class="score-board">
+                <div>PLAYER SCORE: <span id="playerScore">0</span></div>
+                <div>COMPUTER SCORE: <span id="computerScore">0</span></div>
+            </div>
+
+            <div class="result" id="result"></div>
+
+            <!-- <div class="hands">
+                <div class="playerHand" id="playerHand">
+                    <img src="public/images/paper.svg" alt="paper">
+                </div>
+                <div class="vs" id="vs">vs</div>
+                <div class="computerHand" id="computerHand">
+                    <img src="public/images/rock.svg" alt="rock">
+                </div>
+            </div> -->
+
+            <div class="hands">
+                <div class="playerHand" id="playerHand">✋</div>
+                <div class="vs" id="vs">vs</div>
+                <div class="computerHand" id="computerHand">✊</div>
+            </div>
+
+
+            <div class="select" id="select">Choose your move, rock paper or scissors?</div>
+
+            <div class="choices">
+                <button class="choice-btn" onclick="play('rock')">ROCK</button>
+                <button class="choice-btn" onclick="play('paper')">PAPER</button>
+                <button class="choice-btn" onclick="play('scissors')">SCISSORS</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
